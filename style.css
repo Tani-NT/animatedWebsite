@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #f7f7f7;
+}
+#nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 99;
+}
+#navPart1{
+    height: 84px;
+    overflow: hidden;
+}
+#navPart1 svg{
+    display: block;
+}
+.svg2{
+    margin-top: 90px;
+}
+#navPart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#links{
+    padding: 20px;
+}
+#icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7;
+}
+#links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin:0 20px;
+}
+#icons i{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    position: fixed;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+#page1{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 12vw;
+}
+#page1 h1{
+    font-family: futura;
+    font-size: 15vw;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -5px;
+}
+#video-container{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    margin-top: 1vw;
+}
+#video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#play{
+    padding: 3vw 2vw;
+    font-family: futura;
+    font-size: 1.5vw;
+    position: fixed;
+    font-size: 1.5vw;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:3vw 1vw;
+}
+.elem{
+    height: 100%;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dets{
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    background-color: rebeccapurple;
+    z-index: 9;
+    border-radius: 2vw;
+}
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3vw;
+}
+.child{
+    height: 55vh;
+    width: 40vw;
+}
+.child img{
+    height: 70%;
+    width: 70%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px){
+    
+    #navPart1{
+        width: 110px;
+        height: 69px;
+        overflow: hidden;
+    }
+    #navPart1 svg{
+        height: 68px;
+    }
+    .svg2{
+        height: 40px;
+        width: 40px;
+    }
+    #links{
+        padding: 20px;
+        display: none;
+    }
+    #icons i{
+        font-size: 13px;
+        margin: 0 10px;
+        font-weight: 100;
+    }
+    #page1{
+        height: 100vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 35vh;
+    }
+    #page1 h1{
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+    }
+    #video-container{
+        margin-top: 3vw;
+    }
+    #video-container video{
+        height: 30vh;
+    }
+    #video-container #play{
+        padding: 9vw 7vw;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    }
+    #page2{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5vw;
+        margin-top: -100px;
+        padding: 3vw 1vw;
+    }
+    .elem{
+        height: 60vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .dets{
+        height: 40px;
+        border-radius: 5vw;
+    }
+    #page3{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 3vw;
+    }
+    .child{
+        height: 50%;
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+    .child img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
