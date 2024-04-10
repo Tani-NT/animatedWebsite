@@ -142,7 +142,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 3vw;
 }
@@ -151,10 +151,87 @@ body{
     width: 40vw;
 }
 .child img{
-    height: 70%;
-    width: 70%;
+    height: 80%;
+    width: 80%;
+    margin-left: 2.8vw;
     object-fit: cover;
 }
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    margin-bottom: 4vw;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+    margin: 1vw 3.5vw;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .3vw;
+}
+.social p{
+    margin-bottom: 1vw;
+    color: #acacac;
+    font-size: .9vw;
+}
+.links a{
+    text-decoration: none;
+    color: #000;
+}
+.links a:hover{
+    color: #acacac;
+}
+.goodthings{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: .3vw;
+}
+.goodthings p{
+    margin-right: 3vw;
+    color: #acacac;
+    font-size: .9vw;
+}
+#FAQs{
+    gap: .3vw;
+    margin-top: 1vw;
+}
+#FAQs a{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+    text-decoration: none;
+    color: #000;
+}
+#FAQs a:hover{
+    color: #acacac;
+}
+.footerImg{
+    margin-left: 35%;
+}
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    margin-top: 2vw;
+    display: flex;
+    gap: 4vw;
+    color: #acacac;
+}
+.content{
+    text-align: center;
+    margin: 4vw 18vw;
+    font-size: 17px;
+}
+
 
 @media (max-width: 600px){
     
@@ -227,7 +304,7 @@ body{
         border-radius: 5vw;
     }
     #page3{
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         position: relative;
         display: flex;
@@ -245,5 +322,22 @@ body{
         height: 100%;
         width: 100%;
         object-fit: cover;
+    }
+    .social p{
+        margin-bottom: 2vw;
+        color: #acacac;
+        font-size: 3.5vw;
+    }
+    .goodthings p{
+        margin-right: 10vw;
+        color: #acacac;
+        font-size: 3.5vw;
+    }
+    .footerImg{
+        width: 20%;
+        height: 20%;
+        object-fit: cover;
+        margin-left: 40%;
+        margin-top: 6vw;
     }
 }
